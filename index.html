@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <main >   
+      <section class="player player--0 player--active" >
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1  ">     
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+     
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>        
+    </main>
+    
+    <div class=" overlay">
+      <div class="modal-window ">
+        <ul>
+         <h1 class="modal-head"> Rules</h1>
+         <li class="rule">You need at least 100 score to &#127942;win. </li>
+         <li class="rule">Blue background shows  which player is active. </li>
+         <li class="rule"> Switches to next player if dice is 1.</li>
+         <li class="rule">Press 'HOLD' button to add current score to main score. 
+          After clicking on 'HOLD' button switches to next player. </li>
+        </ul> 
+          <button class="btn-modal"> OK </button>
+      </div>
+      </div>
+      <div class="Winner-Labal hidden">&#127942; Player <span id="winner-player">0</span> Wins! &#127942;</div>
+      <button class="btn btn--new">🔄 New game</button>
+      <img src="confetti.gif" alt="confetti" id="confetti"/>
+      <button class=" btn btn-mute"> &#128263; MUTE </button>
+      <script src="index.js"> </script> 
+  </body>
+</html
+
+
